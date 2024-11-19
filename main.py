@@ -1,12 +1,5 @@
-import pandas
-import numpy
+import time
 
-print ("Hello world\nhello boy")
-
-a = 12
-b = "13"
-
-print (a + int(b))
-
-n = input("give number")
-print (a + float(n))
+# timestamp = time.strftime("%H:%M:%S")
+print(time.clock_gettime(9))
+print(time.strftime("%H:%M:%S"))
