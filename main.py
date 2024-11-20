@@ -44,15 +44,30 @@
 # print(f"x = {x}")            
 # print(f"{x = }")        
 
-def fibonacci(n):
-  if n == 0:  # Base case
-      return 0
-  elif n == 1:  # Base case
-      return 1
-  else:
-      return fibonacci(n - 1) + fibonacci(n - 2)
-  
+def fibonacci_iterative(n):
+    """Prints the first n Fibonacci numbers using an iterative approach."""
+    # Handle edge cases
+    if n <= 0:
+        print("Please enter a positive integer.")
+        return
 
+    # Base cases
+    if n == 1:
+        print("0")
+        return
+    elif n == 2:
+        print("0, 1")
+        return
 
-print(fibonacci(5))  
+    # Initialize the first two Fibonacci numbers
+    a, b = 0, 1
+    print(a,"\n",b)
 
+    # Generate the rest of the Fibonacci sequence
+    for _ in range(n - 2):
+        c = a + b
+        print(c)
+        a, b = b, c
+
+# Example usage
+fibonacci_iterative(7)
