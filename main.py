@@ -1,6 +1,23 @@
-a= int(input("Enter value between 1 and 10:"))
-if(a<1 or a>10):
-    raise ValueError("Value should be between 1 and 10")
+import os
+
+if not os.path.exists("Python"):
+    os.mkdir(r"Python")
+#a= open("test.txt", "w")
+f= open("test.txt", "a")
+#a.read()
+f.write("Hello World")
+
+#print(text)
+
+
+
+
+
+
+
+# a= int(input("Enter value between 1 and 10:"))
+# if(a<1 or a>10):
+#     raise ValueError("Value should be between 1 and 10")
     
 # set1 = {2, 4, 65, 'u'}
 # set2 = {3, 7, 6}

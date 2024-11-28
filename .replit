@@ -1,4 +1,4 @@
-entrypoint = "quiz.py"
+entrypoint = "main.py"
 modules = ["python-3.11"]
 
 [nix]
