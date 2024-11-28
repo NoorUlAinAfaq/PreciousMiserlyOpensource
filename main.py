@@ -1,23 +1,27 @@
-set1 = {2, 4, 65, 'u'}
-set2 = {3, 7, 6}
-set3 = set()
-print(set1.union(set2), set3)
-print(set1.intersection(set2))
-print(set1.difference(set2))
+a= int(input("Enter value between 1 and 10:"))
+if(a<1 or a>10):
+    raise ValueError("Value should be between 1 and 10")
+    
+# set1 = {2, 4, 65, 'u'}
+# set2 = {3, 7, 6}
+# set3 = set()
+# print(set1.union(set2), set3)
+# print(set1.intersection(set2))
+# print(set1.difference(set2))
 
-set3.add(2)
-print(hash(frozenset(set2)))
-print(set3)
-print(hash("noorafaq"))
+# set3.add(2)
+# print(hash(frozenset(set2)))
+# print(set3)
+# print(hash("noorafaq"))
 
-a = input("Enter the number:")
+# a = input("Enter the number:")
 
-try:
-    for index in range(1, 11):
-        print(f"{int(a)} X {index} = {int(a)*index}")
-except ValueError:
-    print("Invalid Input")
-# # import time
+# try:
+#     for index in range(1, 11):
+#         print(f"{int(a)} X {index} = {int(a)*index}")
+# except ValueError:
+#     print("Invalid Input")
+# # # import time
 
 # # # timestamp = time.strftime("%H:%M:%S")
 # # print(time.clock_gettime(9))
