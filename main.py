@@ -53,7 +53,7 @@ except ValueError:
 
 # name = "Alice"
 # age = 25
-# bio = f"""
+# bio = abc
 # Name: {name}
 # Age: {age}
 # """
